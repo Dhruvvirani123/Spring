@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="collection.User" name="u">
+		<property name="id" value="12" />
+		<property name="name" value="Dhruv" />
+		<property name="contact">
+			<list>
+				<value>7046970488</value>
+				<value>9624360699</value>
+			</list>
+		</property>
+		<property name="strings">
+			<set>
+				<value>Dhruv</value>
+				<value>Dk</value>
+			</set>
+		</property>
+		<property name="maps">
+			<map>
+				<entry key="1" value="SBI" />
+				<entry key="2" value="BOB" />
+			</map>
+		</property>
+	</bean>
+</beans>
