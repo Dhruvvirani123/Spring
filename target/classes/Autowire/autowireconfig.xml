@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:annotation-config />
+
+	<bean class="Autowire.Employee" name="e1">
+		<property name="id" value="200" />
+		<property name="name" value="Dhruv" />
+		<property name="contact" value="7046970488" />
+	</bean>
+
+	<bean class="Autowire.Address" name="e2">
+		<property name="hno" value="200" />
+		<property name="city" value="Surat" />
+		<property name="state" value="Gujarat" />
+	</bean>
+
+	<bean class="Autowire.Address" name="e3">
+		<property name="hno" value="2002" />
+		<property name="city" value="Amreli" />
+		<property name="state" value="Gujarat" />
+	</bean>
+
+</beans>

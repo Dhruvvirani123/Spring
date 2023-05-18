@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class main {
 	public static void main(String[] args) {
 		ApplicationContext con = new ClassPathXmlApplicationContext("constructorinjection/constructorinjection.xml");
-		User u1 = (User) con.getBean("u");
+		User u1 = (User) con.getBean("u1");
 		System.out.println(u1);
 	}
 }
